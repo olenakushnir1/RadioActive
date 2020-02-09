@@ -1,0 +1,807 @@
+.text_container {
+    height: auto;
+}
+
+.fotter_cont_box {
+    display: none;
+}
+
+.span span {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    margin: 2vw 0;
+    font-size: 25px;
+}
+
+.span {
+    position: relative;
+    z-index: 5;
+}
+
+
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.intro1 {
+    opacity: 1;
+}
+
+.intro2 {
+    opacity: 0;
+}
+
+.intro3 {
+    opacity: 0;
+}
+
+.intro4 {
+    opacity: 0;
+}
+
+
+.video {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header,
+footer {
+
+    z-index: 8;
+}
+
+#menu,
+.m-menu__overlay {
+    position: fixed;
+}
+
+footer {
+    z-index: 3;
+    justify-content: space-between;
+}
+
+.container {
+    background-image: url(../img/bg_impact.png);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7vw 5.6vw;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 3;
+}
+
+.main_h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'SackersM';
+    letter-spacing: 0.2vw;
+    line-height: 2;
+    font-size: 1.5vw;
+    text-align: justify;
+
+}
+
+.main_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.main_box .video {
+    width: 48vw;
+    height: 27vw;
+    background-color: #081f20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    padding: 0
+}
+
+.main_box .video .play {
+    border-radius: 50%;
+    background-color: #74bd8a;
+    width: 5.5vw;
+    height: 5.5vw;
+    background-image: url(../img/main-play-button.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 58%;
+    border: none;
+    cursor: pointer;
+}
+
+.main_box .video .close {
+    position: absolute;
+    left: 95%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.beh_tittle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.main .main_tittle {
+    color: white;
+    font-size: 0.75vw;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#masterWrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#panelWrap {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    position: relative;
+    float: left;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1.8vw;
+    width: 1.8vw;
+    position: relative;
+    background-color: transparent;
+    margin: 0.63vw 0.42vw;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#dot0d {
+    width: 3.8vw;
+    height: 3.8vw;
+    margin: 0;
+}
+
+.dot img {
+    position: absolute;
+    max-width: 100%;
+}
+
+.circle1 {
+    animation: pulse1 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
+
+.circle2 {
+    animation: pulse3 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
+
+.dots_box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    left: 26%;
+    bottom: 0%;
+}
+
+.dots_box .dots_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    color: #92c268;
+    font-size: 0.63vw;
+    text-transform: uppercase;
+    padding: 0vw 5vw 1vw 0.7vw;
+    letter-spacing: 0.2vw;
+}
+
+.dots {
+    z-index: 100;
+    height: 100%;
+    width: 93%;
+    position: relative;
+    left: 0%;
+    bottom: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url(../img/horizontal-line.png) right center;
+    background-repeat: no-repeat;
+    padding: 0 9vw 0 7vw;
+    background-size: 100% 5%;
+}
+
+.dotsBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1vw;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    cursor: pointer;
+    opacity: 0.75;
+    width: 40px;
+    height: 40px;
+    stroke-width: 8px;
+    stroke: white;
+    fill: transparent;
+    display: none;
+}
+
+.title {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.contant_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #00393a;
+    border-radius: 3.67vw 0 3.67vw 0;
+    width: 42%;
+    padding: 2.2vw 3vw;
+    position: relative;
+    margin: 3vw 0vw;
+}
+
+.contant_text span {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contant_h {
+    color: #93c469;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 100%;
+}
+
+.contant_text {
+    color: white;
+    font-size: 0.7vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    line-height: 1.6;
+    margin: 1vw 0;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contant_box .behind_icon {
+    position: absolute;
+    right: -1.5vw;
+    top: -1.5vw;
+    width: 12.2%;
+}
+
+.header_btn {
+    color: #93c469;
+    border: 1px solid #93c469;
+    font-size: 0.73vw;
+    background-color: transparent;
+    border-radius: 1.3vw;
+    padding: 0.73vw 1.8vw;
+    font-family: 'Avenir';
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    z-index: 2;
+    position: relative;
+    text-decoration: none;
+}
+
+.header_btn:hover {
+    background-color: #93c469;
+    color: #081f20 !important;
+    -webkit-box-shadow: 0 0 10px #93c469;
+    -moz-box-shadow: 0 0 10px #93c469;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+
+.main .contant_box3 {
+    margin: 0vw 0 1vw 43vw;
+}
+
+.main .contant_box3 .contant_text {
+    font-size: 0.76vw;
+}
+
+.main_Behind {
+    display: none;
+}
+
+.main_h1 {
+    position: relative;
+}
+
+@media all and (max-width:1920px) {
+    .main .main_h1 {
+        font-size: 1.72vw;
+    }
+
+    .main .main_tittle {
+        font-size: 0.95vw;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .main .main_box {
+        margin-top: 2.5vw;
+    }
+
+    .main_box .video {
+        width: 48vw;
+        height: 27vw;
+    }
+}
+
+@media all and (max-width:1280px) {
+
+    .main_box .video {
+        width: 40.7vw;
+        height: 23vw;
+    }
+
+
+    .main .main_box {
+        margin-top: 1vw;
+    }
+
+}
+
+@media all and (max-width:1024px) {
+    .dotsBox {
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+        margin: 0;
+    }
+
+    .main {
+        padding: 12vw 0 0vw 9.6vw;
+    }
+
+    .header_btn_box_m {
+        height: 9vw;
+    }
+
+    .main .main_tittle {
+        line-height: 2;
+    }
+
+    .dots {
+        background-size: 4% 100%;
+        padding: 6vw 0 4vw;
+        align-items: center;
+        z-index: 100;
+        height: 89%;
+        bottom: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url(../img/vertical-line.png) center bottom;
+        background-repeat: no-repeat;
+    }
+
+    .dots_box {
+        height: 79.5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 7;
+        left: 4%;
+        bottom: 0%;
+        margin: 1.5vw 0 0;
+    }
+
+    .dot {
+        height: 4vw;
+        width: 4vw;
+    }
+
+    #dot11 {
+        width: 7.8vw;
+        height: 7.8vw;
+        margin: 0;
+    }
+
+    .dots_box .dots_text {
+        width: 33%;
+        font-size: 1.3vw;
+        padding: 3.2vw 0 5vw;
+        flex-direction: column;
+    }
+
+    .dots_box {
+        position: relative;
+        left: 0;
+    }
+
+    .desctop,
+    .intro {
+        display: none !important;
+    }
+
+    .container {
+        background-image: url(../img/bg_impact.png);
+        background-position: center;
+    }
+
+    .main_Behind {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0vw 12vw 0;
+    }
+
+    .main_Behind .main_h1 {
+        line-height: 1.5;
+        line-height: 1.5;
+        font-size: 2.7vw;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'SackersM';
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
+
+    .main_Behind .main_tittle {
+        color: white;
+        padding: 0 5vw;
+        font-size: 1.2vw;
+        text-align: center;
+        line-height: 1.5;
+        font-weight: 300;
+        letter-spacing: 0.3vw;
+        text-transform: uppercase;
+    }
+
+    .main_box {
+        border-radius: 7vw;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        display: none;
+        padding: 0;
+    }
+
+    .video {
+        width: 100%;
+        height: 52vw;
+        border-radius: 7vw;
+        z-index: 0;
+    }
+
+    .main_box .video {
+        width: 100%;
+        height: 37vw;
+    }
+
+    /*    modal*/
+
+    .contant_box .behind_icon {
+        right: 0;
+        left: -6vw;
+        top: -5.5vw;
+        width: 17.2%;
+    }
+
+    .contant_box {
+        border-radius: 9vw;
+        width: 94%;
+        padding: 5.3vw 5vw 4.3vw 8vw;
+        position: relative;
+        margin: 0 0 0 auto;
+        align-items: center;
+        display: none;
+    }
+
+    .contant_h {
+        font-size: 3vw;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.3vw;
+        text-align: left;
+        width: 100%;
+    }
+
+    .contant_text {
+        color: white;
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        letter-spacing: 0.3vw;
+        line-height: 1.6;
+        margin: 1vw 0 1.5vw;
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .closeBtn {
+        position: absolute;
+        right: 9%;
+        top: 9%;
+        cursor: pointer;
+        color: #93c469;
+    }
+
+    .closeBtn img {
+        width: 2.5vw;
+    }
+
+    .header_btn {
+        font-size: 1.73vw;
+        border-radius: 6.3vw;
+        padding: 1.73vw 6.8vw;
+        letter-spacing: 0.5vw;
+        margin: 0 5vw 0 0;
+    }
+
+    .modalImg {
+        width: 94%;
+        height: 100%;
+        margin: 3vw 0 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 9vw;
+    }
+
+    .main_box {
+        border-radius: 7vw;
+        width: 100%;
+
+        position: relative;
+        margin: 0;
+        display: none;
+        padding: 0;
+    }
+
+    .video {
+        width: 100%;
+        height: 52vw;
+        border-radius: 7vw;
+        z-index: 0;
+    }
+
+    .video .close {
+        display: none;
+    }
+
+}
+
+@media all and (max-width:768px) {
+
+
+    .header_btn_box_m {
+        height: 9vw;
+    }
+
+    .main_Behind {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw 12vw 0;
+    }
+
+    .main_Behind .main_h1 {
+        padding: 0 15.7vw;
+        line-height: 1.5;
+        font-size: 3.7vw;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'SackersM';
+        letter-spacing: 0.5vw;
+        line-height: 1.5;
+        margin: 0 0 3vw;
+    }
+
+    .main_Behind .main_tittle {
+        color: white;
+        padding: 0 4vw;
+        font-size: 2.2vw;
+        text-align: center;
+        line-height: 1.5;
+        font-weight: 300;
+        letter-spacing: 0.5vw;
+    }
+
+    .dots_box {
+        margin: 3.5vw 0 0;
+    }
+
+    #dot11 {
+        width: 9.8vw;
+        height: 9.8vw;
+    }
+
+    .dot {
+        height: 6vw;
+        width: 6vw;
+    }
+
+    .dots {
+        padding: 10.5vw 0;
+        height: 84%;
+    }
+
+    .dots_box .dots_text {
+        width: 53%;
+        font-size: 2.3vw;
+        padding: 6vw 0 13.5vw;
+    }
+
+    .modalWindow {
+        padding: 17% 9vw 7%;
+    }
+
+    .dotsBox {
+        height: 100%;
+        margin: 0;
+    }
+
+
+    /*    modal*/
+
+    .contant_box .behind_icon {
+        right: 0;
+        left: -4vw;
+        top: -7.5vw;
+        width: 20.2%;
+    }
+
+    .contant_box {
+        width: 96%;
+        padding: 7.3vw 6vw 6.3vw 11vw;
+        display: none;
+    }
+
+    .contant_h {
+        font-size: 5vw;
+    }
+
+    .contant_text {
+        font-size: 2.6vw;
+    }
+
+    .discover {
+        font-size: 1.73vw;
+        border-radius: 6.3vw;
+        padding: 1.73vw 6.8vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .modalImg {
+        width: 96%;
+        height: 58%;
+    }
+
+    .main_box {
+        border-radius: 7vw;
+        width: 100%;
+
+        position: relative;
+        margin: 0;
+        display: none;
+        padding: 0;
+    }
+
+    .discover {
+        font-size: 1.73vw;
+        border-radius: 6.3vw;
+        padding: 1.73vw 6.8vw;
+        letter-spacing: 0.5vw;
+    }
+
+
+    .video {
+        width: 100%;
+        height: 52vw;
+        border-radius: 7vw;
+        z-index: 0;
+        padding: 0;
+    }
+
+    .video .close {
+        display: none;
+    }
+}
+
+@media all and (max-width:425px) {
+    .dots_box .dots_text {
+        width: 53%;
+        font-size: 2.3vw;
+        padding: 7.8vw 0 15.5vw;
+    }
+
+    .dots {
+        padding: 13.5vw 0 10.5vw;
+    }
+}
